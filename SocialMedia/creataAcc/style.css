@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Peralta&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Peralta&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --bgcolor: linear-gradient(to bottom,
+            #3C096C 0%,
+            #10002B 0%,
+            #7B2CBF 100%,
+            #240046 100%);
+    --main_font: "Peralta", serif;
+    --other_fonts: "Poppins", serif;
+    --fontCol: white;
+}
+
+body {
+    /* background: var(--bgcolor);
+     */
+    height: 100vh;
+    overflow: hidden;
+    color: var(--fontCol);
+    font-family: var(--other_fonts);
+    position: relative;
+}
+
+h1 {
+    font-family: var(--main_font);
+    text-align: center;
+}
+
+.form_input {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 60px;
+}
+
+.parent {
+    padding-top: 50px;
+    height: 600px;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 112px;
+    margin: 0 auto;
+    box-shadow: 5px 6px 5px 2px grey;
+    background-image: url("https://images.pexels.com/photos/5361243/pexels-photo-5361243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-position: center;
+    /* filter: opacity(0.2); */
+}
+
+.btn button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.bakImg {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-image: url("https://images.pexels.com/photos/5361243/pexels-photo-5361243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    filter: blur(0.2);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bakImg::before {
+    content: '';
+    background-image: url("https://images.pexels.com/photos/5361243/pexels-photo-5361243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    position: absolute;
+    /* z-index: 2; */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.35;
+}
